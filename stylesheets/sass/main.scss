@@ -5,6 +5,7 @@
 
 //VARIABLES
 $imgSize: 100px;
+$borderB: 1px solid #EEE;
 
 //PLACEHOLDERS
 %button {
@@ -59,20 +60,16 @@ body {
 
   h3 {
 
-    @extend h1;
-    font-size: 16px;
+    @extend h2;
     margin: 40px 0 0 0;
-    font-weight: 500;
-    color: #555;
+
 
   }
 
   h4 {
 
-    @extend h1;
+    @extend h3;
     font-size: 12px;
-    margin: 40px 0 0 0;
-    font-weight: 500;
     color: #3DA6EB;
     cursor: pointer;
     -webkit-user-select: none;
@@ -132,12 +129,12 @@ body {
     li {
       background-color: #FFF;
       padding: 20px;
-      border-bottom: 1px solid #EEE;
+      border-bottom: $borderB;
       cursor: pointer;
 
       &:first-child {
 
-        border-top: 1px solid #EEE;
+        border-top: $borderB;
 
       }
 
